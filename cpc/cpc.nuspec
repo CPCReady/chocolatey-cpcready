@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cpc</id>
+    <version>1.1.0</version>
+    <packageSourceUrl>https://github.com/CPCReady/chocolatey-cpcready</packageSourceUrl>
+    <owners>destroyer</owners>
+    <title>CPCReady</title>
+    <authors>destroyer</authors>
+    <projectUrl>https://github.com/CPCReady/cpc</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/CPCReady/cpc/main/Resources/icon_512x512.png</iconUrl>
+    <licenseUrl>https://github.com/CPCReady/cpc/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/CPCReady/cpc</projectSourceUrl>
+    <docsUrl>https://github.com/CPCReady/cpc#readme</docsUrl>
+    <bugTrackerUrl>https://github.com/CPCReady/cpc/issues</bugTrackerUrl>
+    <tags>cpc amstrad retro emulator disk-image dsk</tags>
+    <summary>CPCReady - Amstrad CPC development tool</summary>
+    <description>
+# CPCReady
+
+A command-line toolchain for managing Amstrad CPC disk images (.DSK files) and running them in emulators.
+
+## Features
+
+- **Disk Management**: Create, list, and manage .DSK disk images
+- **Virtual Drives**: Simulate A and B drives with disk insertion/ejection
+- **File Operations**: Save, list, extract, rename, and delete files on disks
+- **CP/M User Areas**: Support for user numbers (0-15) like real CP/M systems
+- **Emulator Integration**: Launch RetroVirtualMachine with automatic configuration
+- **CPC Configuration**: Manage CPC model (464/664/6128), video mode
+
+## Installation
+
+```powershell
+choco install cpc
+```
+
+## Usage
+
+```powershell
+cpc --version
+cpc drive A disk.dsk
+cpc cat
+```
+
+For more information, visit: https://github.com/CPCReady/cpc
+    </description>
+    <releaseNotes>https://github.com/CPCReady/cpc/releases/tag/v1.1.0</releaseNotes>
+    <dependencies>
+      <dependency id="python" version="3.13.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
