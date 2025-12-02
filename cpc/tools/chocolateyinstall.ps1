@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 
 $packageName = 'cpc'
 $version = '1.1.0'
-$url = "https://github.com/CPCReady/cpc/archive/refs/tags/v0.1.3.tar.gz"
+$url = "https://github.com/CPCReady/cpc/archive/refs/tags/v2.0.0.tar.gz"
 $checksum = 'df07129b114cc9e3d5e633f54a89a566110c1500f343ca6c17a1db7905ffb0f1'
 $checksumType = 'sha256'
 
