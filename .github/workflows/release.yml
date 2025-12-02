@@ -1,0 +1,46 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Extract version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.get_version.outputs.VERSION }}
+          name: v${{ steps.get_version.outputs.VERSION }}
+          body: |
+            ## Chocolatey Package for CPCReady v${{ steps.get_version.outputs.VERSION }}
+            
+            This release contains the Chocolatey package definition for installing CPCReady v${{ steps.get_version.outputs.VERSION }} on Windows.
+            
+            ### Installation
+            
+            ```powershell
+            choco install cpc
+            ```
+            
+            ### Package Files
+            
+            - `cpc/cpc.nuspec` - Package metadata
+            - `cpc/tools/chocolateyinstall.ps1` - Installation script
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
