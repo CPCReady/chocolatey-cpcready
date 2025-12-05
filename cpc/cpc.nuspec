@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cpc</id>
-    <version>3.0.1</version>
+    <version>0.0.0</version>
     <packageSourceUrl>https://github.com/CPCReady/chocolatey-cpcready</packageSourceUrl>
     <owners>destroyer</owners>
     <title>CPCReady</title>
