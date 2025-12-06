@@ -19,7 +19,7 @@
     <description>CPCReady is a command-line toolchain for managing Amstrad CPC disk images. Features include disk management, virtual drives, file operations, CP/M user areas support, emulator integration, and CPC configuration.</description>
     <releaseNotes>https://github.com/CPCReady/cpc/releases/tag/v0.0.0</releaseNotes>
     <dependencies>
-      <dependency id="python3" version="[3.10,)" />
+      <dependency id="python" version="[3.10,)" />
     </dependencies>
   </metadata>
   <files>
