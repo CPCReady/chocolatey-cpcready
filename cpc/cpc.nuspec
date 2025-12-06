@@ -16,19 +16,7 @@
     <bugTrackerUrl>https://github.com/CPCReady/cpc/issues</bugTrackerUrl>
     <tags>cpc amstrad retro emulator disk-image dsk</tags>
     <summary>CPCReady - Amstrad CPC development tool</summary>
-    <description>
-CPCReady - A command-line toolchain for managing Amstrad CPC disk images (.DSK files) and running them in emulators.
-
-Features:
-- Disk Management: Create, list, and manage .DSK disk images
-- Virtual Drives: Simulate A and B drives with disk insertion/ejection
-- File Operations: Save, list, extract, rename, and delete files on disks
-- CP/M User Areas: Support for user numbers (0-15) like real CP/M systems
-- Emulator Integration: Launch RetroVirtualMachine with automatic configuration
-- CPC Configuration: Manage CPC model (464/664/6128), video mode
-
-For more information, visit: https://github.com/CPCReady/cpc
-    </description>
+    <description>CPCReady is a command-line toolchain for managing Amstrad CPC disk images. Features include disk management, virtual drives, file operations, CP/M user areas support, emulator integration, and CPC configuration.</description>
     <releaseNotes>https://github.com/CPCReady/cpc/releases/tag/v0.0.0</releaseNotes>
     <dependencies>
       <dependency id="python" version="3.13.0" />
